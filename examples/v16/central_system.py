@@ -65,7 +65,8 @@ async def main():
         on_connect,
         '0.0.0.0',
         9000,
-        subprotocols=['ocpp1.6']
+        subprotocols=['ocpp1.6'],
+        ping_interval = None
     )
 
     logging.info("Server Started listening to new connections...")
